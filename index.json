@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-12",
+  "template_count": 7,
+  "templates": [
+    {
+      "slug": "classic-book",
+      "name": "缃素",
+      "tagline": "暖黄纸色、首字下沉、宽边距",
+      "content_type": ["书籍", "长篇叙事", "小说", "传记"],
+      "tone": ["典雅", "传统", "沉静"],
+      "formality": "high",
+      "scheme": "light",
+      "best_for": "长篇幅叙事内容：小说、传记、游记、长篇散文，需要传统纸质书阅读体验的内容",
+      "avoid_for": "技术文档、数据分析类需要现代感或信息图表支持的内容"
+    },
+    {
+      "slug": "song-essay",
+      "name": "素笺",
+      "tagline": "宋体通栏、象牙白、低对比",
+      "content_type": ["随笔", "读书笔记", "讲义", "散文"],
+      "tone": ["清雅", "淡泊", "安静"],
+      "formality": "medium",
+      "scheme": "light",
+      "best_for": "个人随笔、读书笔记、课堂讲义、散文类文字，安静低调的阅读体验",
+      "avoid_for": "需要视觉冲击力或数据呈现的品牌类内容"
+    },
+    {
+      "slug": "research-report",
+      "name": "青简",
+      "tagline": "青蓝冷调、柱状图、数据表嵌入",
+      "content_type": ["研究报告", "白皮书", "数据分析", "学术论文"],
+      "tone": ["专业", "理性", "清晰"],
+      "formality": "high",
+      "scheme": "light",
+      "best_for": "研究报告、白皮书、数据分析类内容，需要专业冷静的视觉呈现",
+      "avoid_for": "叙事性强的小说、随笔等文学类内容"
+    },
+    {
+      "slug": "magazine-feature",
+      "name": "琥珀",
+      "tagline": "双栏正文、封面大标题、琥珀色强调",
+      "content_type": ["杂志专题", "深度报道", "人物特写", "文化评论"],
+      "tone": ["鲜明", "有力", "精致"],
+      "formality": "medium",
+      "scheme": "light",
+      "best_for": "杂志式深度报道、专题文章、人物特写，需要视觉冲击力的大篇幅内容",
+      "avoid_for": "技术文档、学术论文等需要高密度信息呈现的内容"
+    },
+    {
+      "slug": "editorial-feature",
+      "name": "赭石",
+      "tagline": "赭色渐变顶栏、粗体标题、通栏正文",
+      "content_type": ["品牌故事", "专题文章", "企业宣传", "社论"],
+      "tone": ["稳重", "温润", "有力"],
+      "formality": "medium-high",
+      "scheme": "light",
+      "best_for": "品牌故事、企业专题文章、社论类内容，需要稳重而有温度的品牌感",
+      "avoid_for": "技术手册、数据分析类需要高密度信息层级的内容"
+    },
+    {
+      "slug": "modern-manual",
+      "name": "翠微",
+      "tagline": "无衬线正文、代码块、callout 提示框",
+      "content_type": ["技术文档", "产品手册", "知识库", "教程"],
+      "tone": ["清晰", "现代", "实用"],
+      "formality": "medium",
+      "scheme": "light",
+      "best_for": "技术文档、产品使用手册、知识库文章、教程类内容，需要清晰的信息层级",
+      "avoid_for": "文学叙事、杂志评论等需要阅读节奏感的内容"
+    },
+    {
+      "slug": "typo-primer",
+      "name": "墨韵",
+      "tagline": "以示例文章讲解排版知识",
+      "content_type": ["教学材料", "排版示例", "技术博客"],
+      "tone": ["博学", "示范", "讲解"],
+      "formality": "medium",
+      "scheme": "light",
+      "best_for": "排版教学、风格展示、技术讲解类内容，本身即展示排版能力的示范文本",
+      "avoid_for": "需要大量正文篇幅承载的内容（此模板侧重展示而非长文阅读）"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "song-essay",
+  "name": "素笺",
+  "tagline": "宋体通栏、象牙白、低对比",
+  "content_type": ["随笔", "读书笔记", "讲义", "散文"],
+  "tone": ["清雅", "淡泊", "安静"],
+  "formality": "medium",
+  "scheme": "light",
+  "best_for": "个人随笔、读书笔记、课堂讲义、散文类文字，安静低调的阅读体验",
+  "avoid_for": "需要视觉冲击力或数据呈现的品牌类内容"
+}

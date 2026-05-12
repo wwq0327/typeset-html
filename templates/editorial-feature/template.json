@@ -1,0 +1,11 @@
+{
+  "slug": "editorial-feature",
+  "name": "赭石",
+  "tagline": "赭色渐变顶栏、粗体标题、通栏正文",
+  "content_type": ["品牌故事", "专题文章", "企业宣传", "社论"],
+  "tone": ["稳重", "温润", "有力"],
+  "formality": "medium-high",
+  "scheme": "light",
+  "best_for": "品牌故事、企业专题文章、社论类内容，需要稳重而有温度的品牌感",
+  "avoid_for": "技术手册、数据分析类需要高密度信息层级的内容"
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "research-report",
+  "name": "青简",
+  "tagline": "青蓝冷调、柱状图、数据表嵌入",
+  "content_type": ["研究报告", "白皮书", "数据分析", "学术论文"],
+  "tone": ["专业", "理性", "清晰"],
+  "formality": "high",
+  "scheme": "light",
+  "best_for": "研究报告、白皮书、数据分析类内容，需要专业冷静的视觉呈现",
+  "avoid_for": "叙事性强的小说、随笔等文学类内容"
+}

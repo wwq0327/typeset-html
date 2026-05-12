@@ -1,0 +1,11 @@
+{
+  "slug": "magazine-feature",
+  "name": "琥珀",
+  "tagline": "双栏正文、封面大标题、琥珀色强调",
+  "content_type": ["杂志专题", "深度报道", "人物特写", "文化评论"],
+  "tone": ["鲜明", "有力", "精致"],
+  "formality": "medium",
+  "scheme": "light",
+  "best_for": "杂志式深度报道、专题文章、人物特写，需要视觉冲击力的大篇幅内容",
+  "avoid_for": "技术文档、学术论文等需要高密度信息呈现的内容"
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "modern-manual",
+  "name": "翠微",
+  "tagline": "无衬线正文、代码块、callout 提示框",
+  "content_type": ["技术文档", "产品手册", "知识库", "教程"],
+  "tone": ["清晰", "现代", "实用"],
+  "formality": "medium",
+  "scheme": "light",
+  "best_for": "技术文档、产品使用手册、知识库文章、教程类内容，需要清晰的信息层级",
+  "avoid_for": "文学叙事、杂志评论等需要阅读节奏感的内容"
+}
