@@ -8,17 +8,63 @@
 2. 下载 `templates/<slug>/template.html`
 3. 将文件投给 AI 写作 Agent，说一句「按此模板的样式生成我的内容」
 
-## 模板一览
+## 模板预览
 
-| 目录 | 中文名 | 气质 | 适合内容 |
-|---|---|---|---|
-| `classic-book` | **缃素** | 暖黄纸色、首字下沉、宽边距 | 小说、传记、长篇叙事 |
-| `song-essay` | **素笺** | 宋体通栏、象牙白、低对比 | 随笔、读书笔记、讲义 |
-| `research-report` | **青简** | 青蓝冷调、柱状图、数据表 | 研究报告、白皮书、论文 |
-| `magazine-feature` | **琥珀** | 双栏正文、封面大标题 | 杂志专题、深度报道 |
-| `editorial-feature` | **赭石** | 赭色渐变顶栏、通栏正文 | 品牌故事、社论 |
-| `modern-manual` | **翠微** | 无衬线正文、代码块、callout | 技术文档、产品手册 |
-| `typo-primer` | **墨韵** | 排版知识示例文章 | 教学材料、风格展示 |
+### 缃素 `classic-book`
+
+暖黄纸色、首字下沉、宽边距 — 适合小说、传记、长篇叙事
+
+![classic-book 开头](screenshots/classic-book-top.png)
+
+![classic-book 中间](screenshots/classic-book-mid.png)
+
+### 素笺 `song-essay`
+
+宋体通栏、象牙白、低对比 — 适合随笔、读书笔记、讲义
+
+![song-essay 开头](screenshots/song-essay-top.png)
+
+![song-essay 中间](screenshots/song-essay-mid.png)
+
+### 青简 `research-report`
+
+青蓝冷调、柱状图、数据表嵌入 — 适合研究报告、白皮书、论文
+
+![research-report 开头](screenshots/research-report-top.png)
+
+![research-report 中间](screenshots/research-report-mid.png)
+
+### 琥珀 `magazine-feature`
+
+双栏正文、封面大标题、琥珀色强调 — 适合杂志专题、深度报道
+
+![magazine-feature 开头](screenshots/magazine-feature-top.png)
+
+![magazine-feature 中间](screenshots/magazine-feature-mid.png)
+
+### 赭石 `editorial-feature`
+
+赭色渐变顶栏、粗体标题、通栏正文 — 适合品牌故事、社论
+
+![editorial-feature 开头](screenshots/editorial-feature-top.png)
+
+![editorial-feature 中间](screenshots/editorial-feature-mid.png)
+
+### 翠微 `modern-manual`
+
+无衬线正文、代码块、callout 提示框 — 适合技术文档、产品手册
+
+![modern-manual 开头](screenshots/modern-manual-top.png)
+
+![modern-manual 中间](screenshots/modern-manual-mid.png)
+
+### 墨韵 `typo-primer`
+
+以示例文章讲解排版知识 — 适合教学材料、风格展示
+
+![typo-primer 开头](screenshots/typo-primer-top.png)
+
+![typo-primer 中间](screenshots/typo-primer-mid.png)
 
 ## 设计原则
 

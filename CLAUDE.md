@@ -44,3 +44,26 @@ This file provides guidance to Claude Code (claude.ai/code) when working with th
 2. 用 `templates/<slug>/template.html` 作为基础，替换内容
 3. 保留字体、配色、布局、装饰等视觉身份
 4. 生成完成后用浏览器打开验证排版效果
+
+## 截图方法
+
+使用 gstack browse 工具截取模板预览图，规则如下：
+
+**启动服务**
+```bash
+python3 -m http.server 8080 &
+```
+
+**截图参数**
+- 比例：21:9（宽高比 7:3）
+- 范围：只截内容主体（`<main>` 或页面主容器），不截背景留白
+- 断点：裁剪线落在段落间隙，不切断文字
+- 每个模板截两张：开头（顶部区域）和中间（滚动到 h2 附近区域）
+
+**操作步骤**
+1. `goto` 模板 URL，`viewport 1200x800`
+2. `js` 获取内容容器 bounds 和子元素位置，找到段落边界
+3. 顶部截图：`--clip x,firstContentY,w,height`，height 断在干净段落边界，尽量接近 21:9
+4. 中部截图：`js window.scrollTo(0, targetY)` 滚动到目标 h2，`--clip x,0,w,height`
+5. 每步截图后用 sips 检查尺寸，用图像工具确认无文字截断、无背景露出
+6. 输出到 `screenshots/` 目录，命名格式 `{slug}-top.png` / `{slug}-mid.png`
