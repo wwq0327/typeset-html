@@ -14,57 +14,43 @@
 
 暖黄纸色、首字下沉、宽边距 — 适合小说、传记、长篇叙事
 
-![classic-book 开头](screenshots/classic-book-top.png)
-
-![classic-book 中间](screenshots/classic-book-mid.png)
+<table><tr><td><img src="screenshots/classic-book-top.png" alt="开头"></td><td><img src="screenshots/classic-book-mid.png" alt="中间"></td></tr></table>
 
 ### 素笺 `song-essay`
 
 宋体通栏、象牙白、低对比 — 适合随笔、读书笔记、讲义
 
-![song-essay 开头](screenshots/song-essay-top.png)
-
-![song-essay 中间](screenshots/song-essay-mid.png)
+<table><tr><td><img src="screenshots/song-essay-top.png" alt="开头"></td><td><img src="screenshots/song-essay-mid.png" alt="中间"></td></tr></table>
 
 ### 青简 `research-report`
 
 青蓝冷调、柱状图、数据表嵌入 — 适合研究报告、白皮书、论文
 
-![research-report 开头](screenshots/research-report-top.png)
-
-![research-report 中间](screenshots/research-report-mid.png)
+<table><tr><td><img src="screenshots/research-report-top.png" alt="开头"></td><td><img src="screenshots/research-report-mid.png" alt="中间"></td></tr></table>
 
 ### 琥珀 `magazine-feature`
 
 双栏正文、封面大标题、琥珀色强调 — 适合杂志专题、深度报道
 
-![magazine-feature 开头](screenshots/magazine-feature-top.png)
-
-![magazine-feature 中间](screenshots/magazine-feature-mid.png)
+<table><tr><td><img src="screenshots/magazine-feature-top.png" alt="开头"></td><td><img src="screenshots/magazine-feature-mid.png" alt="中间"></td></tr></table>
 
 ### 赭石 `editorial-feature`
 
 赭色渐变顶栏、粗体标题、通栏正文 — 适合品牌故事、社论
 
-![editorial-feature 开头](screenshots/editorial-feature-top.png)
-
-![editorial-feature 中间](screenshots/editorial-feature-mid.png)
+<table><tr><td><img src="screenshots/editorial-feature-top.png" alt="开头"></td><td><img src="screenshots/editorial-feature-mid.png" alt="中间"></td></tr></table>
 
 ### 翠微 `modern-manual`
 
 无衬线正文、代码块、callout 提示框 — 适合技术文档、产品手册
 
-![modern-manual 开头](screenshots/modern-manual-top.png)
-
-![modern-manual 中间](screenshots/modern-manual-mid.png)
+<table><tr><td><img src="screenshots/modern-manual-top.png" alt="开头"></td><td><img src="screenshots/modern-manual-mid.png" alt="中间"></td></tr></table>
 
 ### 墨韵 `typo-primer`
 
 以示例文章讲解排版知识 — 适合教学材料、风格展示
 
-![typo-primer 开头](screenshots/typo-primer-top.png)
-
-![typo-primer 中间](screenshots/typo-primer-mid.png)
+<table><tr><td><img src="screenshots/typo-primer-top.png" alt="开头"></td><td><img src="screenshots/typo-primer-mid.png" alt="中间"></td></tr></table>
 
 ## 设计原则
 
