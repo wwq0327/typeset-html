@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>赭石 · Editorial Feature</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #171b20;
+      color: #211f1b;
+      font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", Georgia, serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .page {
+      width: min(960px, calc(100% - 32px));
+      margin: 28px auto;
+      background: #f8f1e6;
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: 0 28px 70px rgba(0,0,0,.3);
+      overflow: hidden;
+    }
+    header {
+      padding: clamp(34px, 7vw, 78px) clamp(26px, 8vw, 88px) clamp(30px, 5vw, 50px);
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.12) 1px, transparent 1px),
+        linear-gradient(135deg, #24352f, #7d5434);
+      background-size: 28px 28px, auto;
+      color: #fff7e8;
+    }
+    .kicker {
+      margin: 0 0 24px;
+      color: #f1be70;
+      font: 900 12px/1.4 "Noto Sans SC", "PingFang SC", Arial, sans-serif;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      max-width: 12em;
+      font: 900 clamp(30px, 5vw, 50px)/1.12 "Noto Sans SC", "PingFang SC", Arial, sans-serif;
+      letter-spacing: .01em;
+    }
+    .subtitle {
+      margin: 18px 0 0;
+      max-width: none;
+      color: rgba(255, 247, 232, .82);
+      font-size: clamp(16px, 2vw, 19px);
+      line-height: 1.72;
+    }
+    article {
+      padding: clamp(34px, 6vw, 72px) clamp(26px, 8vw, 88px);
+      font-size: 16.5px;
+      line-height: 1.8;
+      text-align: justify;
+      text-justify: inter-ideograph;
+    }
+    p { margin: 0 0 1.12em; }
+    .lead {
+      color: #3b352d;
+      font-size: clamp(19px, 2.3vw, 23px);
+      line-height: 1.62;
+    }
+    h2 {
+      margin: 2.35em 0 .75em;
+      font: 900 25px/1.24 "Noto Sans SC", "PingFang SC", Arial, sans-serif;
+      letter-spacing: .01em;
+    }
+    h2::before {
+      content: "";
+      display: block;
+      width: 48px;
+      height: 5px;
+      margin-bottom: 14px;
+      background: #b76537;
+    }
+    h3 {
+      margin: 1.8em 0 .55em;
+      color: #795235;
+      font: 800 17px/1.34 "Noto Sans SC", "PingFang SC", Arial, sans-serif;
+    }
+    .en {
+      font-family: Georgia, "Times New Roman", serif;
+      font-style: italic;
+      letter-spacing: .01em;
+    }
+    blockquote {
+      margin: 34px 0;
+      padding: 24px 28px;
+      background: #211f1b;
+      color: #fff7e8;
+      font-family: "Noto Sans SC", "PingFang SC", Arial, sans-serif;
+      font-size: clamp(20px, 3vw, 30px);
+      font-weight: 900;
+      line-height: 1.42;
+      text-align: left;
+    }
+    blockquote p { margin: 0; color: inherit; }
+    ul, ol {
+      margin: 1.1em 0 1.25em;
+      padding-left: 1.35em;
+    }
+    li + li { margin-top: .4em; }
+    li::marker { color: #b76537; }
+    .figure {
+      margin: 34px 0;
+      padding: 18px;
+      border: 1px solid #d9c9b7;
+      background: #fff9ef;
+    }
+    .placeholder {
+      min-height: 210px;
+      background:
+        radial-gradient(circle at 70% 28%, #f0bc6c 0 10%, transparent 11%),
+        linear-gradient(135deg, #2c493f, #b76537);
+    }
+    figcaption {
+      margin-top: 12px;
+      color: #716456;
+      font: 12px/1.62 "Noto Sans SC", "PingFang SC", Arial, sans-serif;
+      text-align: left;
+    }
+    table {
+      width: 100%;
+      margin: 30px 0;
+      border-collapse: collapse;
+      font: 13px/1.58 "Noto Sans SC", "PingFang SC", Arial, sans-serif;
+    }
+    th, td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #d9c9b7;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: #211f1b;
+      background: #ead8c2;
+      font-weight: 900;
+    }
+    .endnote {
+      margin-top: 42px;
+      padding: 18px 22px;
+      border: 1px solid #d9c9b7;
+      border-left: 5px solid #b76537;
+      background: #fff9ef;
+      color: #6b5e50;
+      font: 12px/1.66 "Noto Sans SC", "PingFang SC", Arial, sans-serif;
+      text-align: left;
+    }
+    footer {
+      padding: 18px clamp(26px, 8vw, 88px);
+      border-top: 1px solid #d9c9b7;
+      color: #716456;
+      font: 12px/1.5 "Noto Sans SC", Arial, sans-serif;
+      letter-spacing: .05em;
+    }
+    @media (max-width: 720px) {
+      .page { width: 100%; margin: 0; border: 0; }
+      article { font-size: 16px; }
+      .placeholder { min-height: 170px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <p class="kicker">赭石 · Editorial Feature</p>
+      <h1>一篇文章如何获得自己的节奏</h1>
+      <p class="subtitle">适合专题文章、品牌故事、课程说明和需要轻微视觉冲击的长文。It keeps the body single-column, but gives the opening a stronger editorial voice.</p>
+    </header>
+    <article>
+      <p class="lead">有些内容需要安静，有些内容需要先把读者拉进来。这个版本把封面感放在顶部，把阅读稳定性交还给正文。</p>
+      <p>正文仍然是完整的一栏。标题、引文、图文块和表格都嵌入同一条阅读路径里，不做侧栏，也不把注释拆到旁边。这样从 Markdown 转换时，结构更容易保持。</p>
+      <h2>一、开头强，正文稳</h2>
+      <p>顶部使用深色块和较强标题，适合专题、故事、报告封面。进入正文以后，字号回到克制范围，行距保持舒适。A strong opening should invite the reader in, not shout through the whole article.</p>
+      <blockquote><p>视觉高潮只负责开门，真正的阅读靠稳定的正文节奏完成。</p></blockquote>
+      <h3>图文混排</h3>
+      <p>如果 Markdown 中含有图片，可以使用下面这种单栏图文块。图注紧贴图片，和正文保持中等距离。</p>
+      <figure class="figure">
+        <div class="placeholder" role="img" aria-label="单栏图片占位"></div>
+        <figcaption>图 1：单栏图片不会破坏正文流，图注保持靠近，符合接近律。</figcaption>
+      </figure>
+      <table>
+        <thead><tr><th>风格</th><th>适用内容</th><th>注意点</th></tr></thead>
+        <tbody>
+          <tr><td>编辑部通栏</td><td>专题、故事、品牌文章</td><td>标题强，正文要克制</td></tr>
+          <tr><td>图文混排</td><td>配图讲解、案例分析</td><td>图注必须靠近图片</td></tr>
+          <tr><td>结尾注记</td><td>补充说明、来源、版权</td><td>放在文章末尾，不打断阅读</td></tr>
+        </tbody>
+      </table>
+      <p>这个模板相比传统书页更有“开场”，但并不改变长文阅读的底层逻辑：明确层级、合适行长、舒适行距、相关内容靠近。</p>
+      <div class="endnote"><b>模板注记：</b>这是偏编辑部/专题感的版本。正文依然完全单栏，适合 Markdown 自动转换后的通用长文页面。</div>
+    </article>
+    <footer>赭石 · Editorial Feature</footer>
+  </main>
+</body>
+</html>
