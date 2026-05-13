@@ -2,49 +2,30 @@
 
 7 个自包含的 HTML 排版模板，覆盖传统书籍到技术文档的不同气质。不依赖任何外部 CSS 库或构建工具。
 
-## Claude Code 集成（任意目录一键排版）
+## Claude Code 集成
 
-在**任意项目目录**中说「输出 HTML」，Claude Code 自动分析 Markdown 内容、匹配最佳模板、生成排版文件。
+任意目录说「输出 HTML」，自动匹配模板并生成排版文件。
 
-### 安装配置
+### 配置
 
-把下面这段发给 Claude Code，让它自动安装配置：
-
----
+把下面这段发给 Claude Code：
 
 ```markdown
 请帮我安装配置 typeset-html 排版模板库：
 
-1. 克隆项目到 ~/Projects/typeset-html：
-   git clone https://github.com/wwq0327/typeset-html.git ~/Projects/typeset-html
-
-2. 在 ~/.claude/CLAUDE.md 末尾添加以下内容（如文件不存在则创建）：
+1. git clone https://github.com/wwq0327/typeset-html.git ~/Projects/typeset-html
+2. 在 ~/.claude/CLAUDE.md 末尾添加：
 
 ## 排版输出
 
-当用户说「输出 HTML」「output HTML」「排版输出」「生成 HTML」时：
+当用户说「输出 HTML」「排版输出」时：
 按照 ~/Projects/typeset-html/CLAUDE.md 的「自动匹配与生成」规则执行。
 不用提问，直接分析内容、匹配模板、生成 HTML。
 
-3. 完成后告诉我"配置好了"
+3. 完成后告诉我
 ```
 
----
-
-> 如果放到了别的路径，把上面两处 `~/Projects/typeset-html` 换成你的实际路径。
-
-### 使用示例
-
-```bash
-cd ~/my-blog
-echo "# 一篇技术文章\n\n安装步骤如下…" > draft.md
-# 对 Claude Code 说：输出 HTML
-# → 自动生成 draft.html（翠微模板）
-```
-
-### 匹配逻辑
-
-读取 `index.json`，按内容特征自动选模板：代码块多 → 翠微（技术文档），表格多 → 青简（研究报告），叙事长文 → 缃素（书籍），默认 → 素笺（随笔）。
+> 路径不同时替换 `~/Projects/typeset-html`。
 
 ## 模板预览
 
