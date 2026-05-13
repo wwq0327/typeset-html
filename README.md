@@ -59,12 +59,39 @@
 - 三级字号体系：标题 > 正文 > 补充说明
 - 颜色承担分类功能而非装饰功能
 
-## Agent 集成
+## Claude Code 集成（任意目录一键排版）
 
-项目提供 `index.json`（结构化元数据索引）和 `AGENTS.md`（Agent 操作手册），方便 AI Agent 按内容类型自动匹配模板。详见 `AGENTS.md`。
+在**任意项目目录**中说「输出 HTML」，Claude Code 自动分析 Markdown 内容、匹配最佳模板、生成排版文件。
+
+### 首次配置
+
+在 `~/.claude/CLAUDE.md` 中加一行：
+
+```markdown
+## 排版输出
+
+当用户说「输出 HTML」「排版输出」时：
+按照 /Users/walt/Projects/typeset-html/CLAUDE.md 的「自动匹配与生成」规则执行。
+```
+
+> 把路径换成你本机的 typeset-html 实际路径。
+
+### 使用方式
+
+```bash
+cd ~/my-blog
+echo "# 一篇技术文章\n\n安装步骤如下…" > draft.md
+# 然后对 Claude Code 说：输出 HTML
+# → 自动生成 draft.html（翠微模板）
+```
+
+### 匹配逻辑
+
+Claude Code 读取 `index.json`，按内容特征自动选模板：代码块多 → 翠微（技术文档），表格多 → 青简（研究报告），叙事长文 → 缃素（书籍），默认 → 素笺（随笔）。
 
 ## 技术说明
 
 - 每个模板是独立的 HTML 文件，CSS 全部内嵌
 - 无需 Node.js、npm 或任何构建步骤
 - 用浏览器直接打开即可预览排版效果
+- 自动匹配规则在 `CLAUDE.md`，Agent 操作手册在 `AGENTS.md`
