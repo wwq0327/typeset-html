@@ -65,16 +65,30 @@
 
 ### 首次配置
 
-在 `~/.claude/CLAUDE.md` 中加一行：
+把下面这段发给 Claude Code，让它自动安装配置：
+
+---
 
 ```markdown
+请帮我安装配置 typeset-html 排版模板库：
+
+1. 克隆项目到 ~/Projects/typeset-html：
+   git clone https://github.com/wwq0327/typeset-html.git ~/Projects/typeset-html
+
+2. 在 ~/.claude/CLAUDE.md 末尾添加以下内容（如文件不存在则创建）：
+
 ## 排版输出
 
-当用户说「输出 HTML」「排版输出」时：
-按照 /Users/walt/Projects/typeset-html/CLAUDE.md 的「自动匹配与生成」规则执行。
+当用户说「输出 HTML」「output HTML」「排版输出」「生成 HTML」时：
+按照 ~/Projects/typeset-html/CLAUDE.md 的「自动匹配与生成」规则执行。
+不用提问，直接分析内容、匹配模板、生成 HTML。
+
+3. 完成后告诉我"配置好了"
 ```
 
-> 把路径换成你本机的 typeset-html 实际路径。
+---
+
+> 如果你把项目放到了别的路径，记得把上面两处 `~/Projects/typeset-html` 换成你的实际路径。
 
 ### 使用方式
 
