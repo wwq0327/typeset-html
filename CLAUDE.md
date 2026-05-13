@@ -88,7 +88,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with th
 │   ├── classic-book/
 │   │   ├── template.html  # 模板本体
 │   │   └── template.json  # 结构化元数据
-│   └── ...（7 个模板）
+│   └── ...
 └── archive/               # 旧版 HTML 文件
 ```
 
